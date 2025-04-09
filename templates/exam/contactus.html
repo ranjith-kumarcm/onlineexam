@@ -13,23 +13,21 @@
 <body>
 
   {% include "exam/navbar.html" %}
-  <br><br>
 
-  <center>
-    <h3 class='alert alert-success'>Please fillup the form in order to contact us</h3>
+  <br><br><br><br>
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+ <center> <h6>
+  This project is a fully functional Online Examination System developed using the Python Django web framework. It is designed for educational institutions, allowing students to take exams online, while teachers and administrators manage courses, questions, and student records efficiently. This system is ideal for IT students in their first or second year, and it simulates a real-life examination environment with an intuitive user interface.
+  </h6>
+<h3>Project developed by</h3>
+<h4>Ranjith Kumar C M<br>Sudarshan B N <br>Mahesh K</h4></center>
+<center>
+  <h4>
+    Contact Us:cmranji@gmail.com
+  </h4>
+</center>
 
-    <form method="POST" autocomplete="off">
-      <!-- Very Important csrf Token -->
-      {% csrf_token %}
-      <div class="form-group">
-        <p>
-        <h3>{{ form.as_p }}</h3>
-        </p>
-        <br>
-        <input type="submit" value="Submit" class='btn btn-primary' style="border-radius: 0%;">
-      </div>
-    </form>
-  </center>
 
   {% include "exam/footer.html" %}
 </body>

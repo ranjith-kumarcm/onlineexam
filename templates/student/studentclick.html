@@ -21,7 +21,18 @@
 </head>
 
 <body>
-
+  <style>
+    * {
+     background-image: url("{% static 'image/gecrbgf.png' %}");
+     background-size: cover; /* Ensures the image covers the entire page */
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     background-attachment: fixed; /* Keeps the background fixed during scrolling */
+     background-position: center; /* Centers the image */
+   }
+   .jumbotron{
+     margin-bottom: 0px;
+   }
+ </style>
   {% include "exam/navbar.html" %}
   <br><br>
   <div class="jumbotron" style="margin-bottom:0px;">
